@@ -8,10 +8,9 @@ document.getElementById('registrationForm').addEventListener('submit', function(
     var username = document.getElementById('username').value;
     var password = document.getElementById('password').value;
    
-    
-  
-    var userData = {
 
+    var userData = {
+      
       firstName: firstName,
       lastName: lastName,
       dateOfBirth: dateOfBirth,
@@ -19,9 +18,10 @@ document.getElementById('registrationForm').addEventListener('submit', function(
       username: username,
       password: password
     };
-    
-   
+
     localStorage.setItem('userData', JSON.stringify(userData));
+
+
     
   
     window.location.href = 'dashboard.html';

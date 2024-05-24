@@ -10,6 +10,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
     
    
     if (savedUser && savedUser.username === username && savedUser.password === password) {
+
   
       window.location.href = 'dashboard.html';
     } else {
